@@ -1,0 +1,889 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+  /* background-color: antiquewhite; */
+  background-color: aliceblue;
+  overflow-x: hidden;
+  
+}
+
+.navbar ul li{
+  font-family: "Jost", serif;
+ 
+  
+}
+
+.icon{
+  position: relative;
+  cursor: pointer;
+}
+.icon ul li{
+  list-style: none;
+  line-height: 36px;
+}
+
+.icon .card{
+  position:absolute;
+  right:20px;
+  top:0px;
+}
+/* .icon .card{
+  display: none;
+}
+
+.icon:hover .card{
+  display: block;
+} */
+
+
+.section_top .section_top_title h1{
+    font-family: "Jost", serif;
+    text-transform: capitalize;
+    font-size: 85px;
+
+
+}
+
+.section_top .section_top_title p{
+   font-size: 18px;
+   font-weight: 400;
+   font-family: "Jost", serif;
+
+}
+
+.section_top .section_top_title span{
+    text-transform: capitalize;
+    color:slateblue;
+}
+
+.section_top  .image_top_section img{
+    border-radius: 5%;
+
+}
+ .section_top .section_top_title button{
+    font-family: "Jost", serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color:#fff;
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.1);
+    border: none;
+    color:black;
+    padding:15px 15px;
+    border-radius: 10px;
+ }
+
+ .trending .trend_product_show img{
+    border-radius: 20px;
+    height: 350px;
+    object-fit: contain;
+    position: relative;
+ }
+  
+ .trending .trend_product_show p{
+    position: absolute;
+    top:35%;
+    left:30%;
+    color:#fff;
+    font-size: 29px;
+    font-family: "Jost", serif;
+    text-transform: capitalize;
+
+ }
+
+ .trending {
+  background: linear-gradient(to right, #dff6ff, #b3e5fc); /* Soft sky blue gradient */
+  padding: 60px 0;
+  font-family: "Jost", serif;
+
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.trend_product_show {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trend_product_show:hover {
+  transform: translateY(-5px);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for text visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+  .featured_product{
+    padding:50px ;
+    margin:30px;
+  }
+  .featured_product h3{
+    text-transform: uppercase;
+    font-family: 'oswald',sans-serif;
+    font-size: 35px;
+
+  }
+  .featured_product .para{
+   font-family: "Jost", serif;
+   font-size: 18px;
+   margin-bottom: 18px;
+   margin-top: 10px;
+
+  }
+  .featured_product span{
+    color:slateblue;
+  }
+
+ .featured_product .image_show img{
+    margin-top: 15px;
+    width:100%; 
+    
+    border-radius: 20px;
+    cursor: pointer;
+   position: relative;
+ } 
+ .featured_product .image_show{
+  position:relative;
+  cursor: pointer;
+ }
+ .featured_product .buy_button{
+  font-family: "Jost", serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color:#fff;
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.1);
+    border: none;
+    color:black;
+    padding:5px 5px;
+    border-radius: 10px;
+ }
+ .featured_product .buy_button .btn{
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+
+
+
+
+ }
+ .featured_product .buy_button{
+  position:absolute;
+  bottom:130px;
+  left:50px;
+ }
+  
+ .featured_product  .icon{
+  position:absolute;
+  top:50px;
+  right:36px;
+  transition: all 0.5s linear;
+
+ }
+
+ .featured_product .icon, .buy_button{
+  display: none;
+  transition: all 0.5s linear;
+
+ }
+
+ .featured_product .image_show:hover .icon{
+  display: block;
+  transition: all 0.5s linear;
+
+ }
+ .featured_product .image_show:hover .buy_button{
+  display: block;
+  transition: all 0.5s linear;
+ }
+
+ .featured_product .icon i{
+  color:#fff;
+  font-size: 32px;
+  display: flex;
+  justify-content: space-around;
+  line-height: 60px;
+ }
+
+  .featured_product .shirt{
+    color:#000;
+    font-size: 29px;
+    font-family: 'jost',sans-serif;
+    text-transform: capitalize;
+  }
+ 
+ .featured_product .price_prod{
+    color:#000;
+    font-size: 19px;
+    font-family: 'jost',sans-serif;
+    
+ }
+.fashion_sense .fashion_exp{
+   line-height: 43px;
+}
+ .fashion_sense p{
+   font-size: 23px;
+   font-family: 'oswald',sans-serif;
+   margin-top: 15px;
+   padding:5px;
+
+ }
+
+ .fashion_sense h1{
+   font-family: 'jost',sans-serif;
+   text-transform: capitalize;
+ }
+
+ .fashion_sense span{
+   color:slateblue;
+ }
+ .text_head{
+   margin-top: 75px;
+   text-align: center;
+   padding: 35px 28px;
+   font-size: xx-large;
+   font-family: 'jost',sans-serif;
+
+   background-color: lightblue;
+ }
+
+ .fashion_sense .fashion_img_section img{
+   box-shadow: 4px 8px 12px rgba(19, 120, 214, 0.8);
+ }
+  
+ .trending_products h3{
+   text-transform: uppercase;
+   font-family: 'oswald',sans-serif;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ 
+ .trending_products span{
+   color:slateblue;
+   
+ }
+ .trending_products .para{
+   font-family: 'jost',sans-serif;
+   font-size: 19px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+ }
+
+ .trending_products .trend_prod img{
+   border-radius: 10px;
+ }
+
+ .trending_products .trend_prod p{
+   font-family: 'jost',sans-serif;
+   font-size: 22px;
+   text-transform: capitalize;
+   color:#000;
+  font-weight: 500;
+
+
+ }
+
+ .offer{
+  margin-top: 130px;
+ }
+
+ .offer .offer_image_section_01{
+
+  position:relative;
+
+ }
+
+ .offer .offer_image_section_01 p{
+  position: absolute;
+  top:35%;
+  left:8%;
+  color:#fff;
+  font-weight: 500;
+  z-index: 2;
+  font-size: 33px;
+  font-family: 'jost',sans-serif;
+
+  
+ }
+
+ .offer .offer_image_section_01{
+  position: relative;
+  z-index: 2;
+ }
+ .offer .offer_image_section_01 .back {
+   background-color: #000;
+   position:absolute;
+   width: 100%;
+   height:100%;
+   top:0;
+   left: 0;
+   opacity: 0.5;
+
+   
+
+ }
+ .offer .offer_image_section_01 span{
+  position: absolute;
+  top:75%;
+  left:7%;
+  color:#fff;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-family: 'jost',sans-serif;
+  z-index: 2;
+ }
+
+ .offer .offer_image_section_02 {
+  position: relative;
+ }
+.offer .offer_image_section_02 p{
+  position: absolute;
+  top:18%;
+  left:7%;
+  color:#fff;
+  z-index: 2;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: 'jost',sans-serif;
+}
+
+.offer .offer_image_section_02 span{
+  position: absolute;
+  top:32%;
+  left:7%;
+  color:#fff;
+  z-index: 2;
+  
+  text-transform: capitalize;
+  font-size: 28px;
+  font-family: 'jost',sans-serif;
+}
+
+.offer .offer_image_section_02{
+  position: relative;
+  z-index: 2;
+  line-height: 45px;
+
+ }
+ .offer .offer_image_section_02 .back {
+   background-color: #000;
+   position:absolute;
+   width: 100%;
+   height:100%;
+   top:0;
+   left: 0;
+   opacity: 0.5;
+
+  }
+
+.offer .offer_image_section_03{
+  position: relative;
+  
+
+} 
+.offer .offer_image_section_03 p{
+  position: absolute;
+  top:28%;
+  left:7%;
+  color:#fff;
+  text-transform: capitalize;
+  font-size: 42px;
+  font-family: 'jost',sans-serif;
+  z-index: 2;
+}
+
+.offer .offer_image_section_03 span{
+  position: absolute;
+  top:56%;
+  left:7%;
+  color:#fff;
+  text-transform: capitalize;
+  font-size: 32px;
+  font-family: 'jost',sans-serif;
+  z-index: 2;
+
+}
+
+.offer .offer_image_section_03{
+  position: relative;
+  z-index: 2;
+  line-height: 45px;
+
+ }
+ .offer .offer_image_section_03 .back {
+   background-color: #000;
+   position:absolute;
+   width: 100%;
+   height:100%;
+   top:0;
+   left: 0;
+   opacity: 0.5;
+
+  }
+
+  .blog_main {
+    margin-top: 50px;
+  }
+.blog_main {
+    font-family: "Jost", serif;
+    text-transform: capitalize;
+  
+
+}
+.blog_main .class_head{
+  font-size: 25px;
+  
+}
+.blog_main .class_para{
+  font-size: 25px;
+}
+
+.testimonial{
+  margin-top: 150px;
+  margin-bottom: 35px;
+
+}
+
+.offer .offer_image_section_02 button{
+  position: absolute;
+  top:50%;
+  left:7%;
+  color:#fff;
+  text-transform: capitalize;
+  font-size: 27px;
+  font-family: 'jost',sans-serif;
+  z-index: 2;
+}
+
+
+.offer .offer_image_section_03 button{
+  position: absolute;
+  top:70%;
+  left:7%;
+  color:#fff;
+  text-transform: capitalize;
+  font-size: 26px;
+  font-family: 'jost',sans-serif;
+  z-index: 2;
+
+}
+
+.offer  .extra_text p{
+  font-family: 'Rubik',serif;
+  
+  font-size: 20px;
+  line-height: 35px;
+
+}
+
+ .offer .extra_text span{
+  color:slateblue;
+ }
+
+ .testimonial h3{
+  font-family: 'jost',sans-serif;
+  font-size: 27px;
+  text-transform: uppercase;
+  font-family: 'oswald',sans-serif;
+
+ }
+.testimonial span{
+  color:slateblue;
+}
+
+ .testimonial p{
+  font-family: 'jost',sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+ }
+
+.testimonial a{
+  text-decoration: none;
+  color:#000;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+}
+.testimonial h5{
+  text-transform: capitalize;
+  font-family: 'jost',sans-serif;
+
+
+}
+
+.facility{
+  margin-top: 150px;
+  font-family: 'jost',sans-serif;
+
+}
+
+.facility i{
+  font-size: 40px;
+  margin-top: 15px;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  color:cadetblue;
+}
+
+.facility h5{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 23px;
+  line-height: 35px;
+  
+}
+
+.facility h5::first-letter{
+ color:slateblue;
+  
+}
+
+.facility p{
+  text-align: center;
+}
+
+
+/* about us section start */
+
+.about_us_section_main .about_us_text h2{
+  text-transform: capitalize;
+  font-size: 45px;
+  font-weight: 500;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about_us_section_main .about_us_text span{
+  color:slateblue;
+}
+
+.main_section_about{
+  margin-top: 4%;
+}
+.main_section_about .about_us_text{
+  font-size: 20px;
+  font-family: 'jost',sans-serif;
+  line-height: 40px;
+  margin-top: 10px;
+
+
+}
+.our_mission{
+  margin-top: 5%;
+} 
+
+.our_mission h2{
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom:25px;
+  text-shadow: 3px 5px 12px rgba(0, 0, 0, 0.1);
+}
+.our_mission span{
+  color:slateblue;
+}
+ .our_mission  .mission_text{
+  font-size: 20px;
+  font-family: 'jost',sans-serif;
+  line-height: 45px;
+  margin-top: 20px;
+
+ }
+  .division_main{
+    font-family: 'jost',sans-serif;
+
+  }
+ .division_main h2{
+  text-transform: capitalize;
+  text-shadow: 3px 5px 12px rgba(0, 0, 0, 0.1);
+
+
+ }
+ .division_main span{
+  color:slateblue;
+ }
+
+ .division_main h4{
+  color:slateblue;
+
+ }
+ 
+
+ .faq{
+  margin-top: 5%;
+  font-family: 'jost',sans-serif;
+
+ }
+
+ .faq .faq_section button{
+  text-decoration: none;
+  color:#000;
+ }
+
+ .faq_section .card-header{
+  background-color: #fff;
+  margin-bottom: 10px;
+ }
+
+
+ /* contact us section */
+
+ .contact_us_section{
+    margin-top: 8%;
+ }
+ .contact_us_section .main_contact{
+  line-height: 38px;
+  font-family: 'jost',sans-serif;
+
+ }
+
+ .contact_us_section .contact_us_info h2{
+   text-transform: capitalize;
+ }
+
+
+ .contact_us_section .main_contact li{
+   list-style: none;
+ }
+
+ .contact_form{
+  background-color: white;
+  width: 100%;
+  padding:70px 80px;
+  height: 100%;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 50px;
+  border-bottom: 2px solid slateblue;
+ }
+ .contact_form input[type="text"],input[type="email"]{
+   width:250px;
+   padding:10px;
+   border: none;
+   height: 100%;
+   border: none;
+   font-family: "Jost", serif;
+   border-bottom: 1px solid cadetblue;
+
+  }
+.contact_form textarea{
+  border: none;
+
+}
+
+.contact_form .text_area{
+  width: 100%;
+  padding:10px;
+  border-bottom: 1px solid cadetblue;
+  font-family: "Jost", serif;
+
+
+  
+}
+
+ /* blog section */
+ .blog_main .blog_head,.blog_para{
+  font-family: 'oswald',sans-serif;
+  font-size: 21px;
+
+ }
+
+ .blog_main span{
+  color:slateblue;
+ }
+
+ .latest_news h2{
+  text-transform: capitalize;
+  font-size: 26px;
+  margin-bottom: 30px;
+ }
+
+ .latest_news .blog_head,.blog_para{
+  font-family: 'oswald',sans-serif;
+  font-size: 21px;
+ }
+ .latest_news .blog_para{
+  color:#444;
+ }
+
+/* footer section */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'jost',sans-serif;
+  margin-top: 100px;
+
+
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-section {
+  width: 25%;
+  padding: 10px;
+}
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-section ul li a:hover {
+  color: #f39c12;
+}
+.newsletter input {
+  padding: 8px;
+  width: 70%;
+  margin-right: 5px;
+}
+.newsletter button {
+  padding: 8px 15px;
+  background: #f39c12;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.social-media {
+  margin-top: 20px;
+}
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+@media (max-width: 768px) {
+  .footer-section {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .navbar{
+    width:100%;
+
+  }
+  .banner__text{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .section_top{
+    height:100vh
+  }
+  .section_top .btn{
+  margin-left: 100px;
+  margin-bottom: 10px;
+    
+  }
+  .image_top_section{
+   
+margin-bottom: 40px;
+  }
+  .image_top_section img{
+     width:100%;
+     object-fit: contain;
+     z-index: 1;
+  }
+  .featured_product .para{
+    line-height: 35px;
+  }
+  .fashion_exp h1{
+    text-align: center;
+  }
+  .fashion_exp p{
+    font-size: 25px;
+  }
+  .offer .offer_image_section_02 span{
+      text-align: center;
+      line-height: 45px;
+  }
+  .offer .button_container_section .btn{
+     margin-top: 55px;
+  }
+.faq .faq_text{
+  line-height: 35px;
+}
+  .faq .faq_text h3,h4,p{
+    text-align: center;
+  }
+  .contact_us_info{
+    text-align: center;
+  }
+
+
+
+}
